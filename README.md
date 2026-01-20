@@ -1,2 +1,11 @@
 # quizer
-Web Technologies Project
+Proekt po Ueb Tehnologii
+
+ot:
+
+joro
+alex
+bobi
+
+RABOTNA VERSIQ
+
