@@ -3,9 +3,9 @@ Proekt po Ueb Tehnologii
 
 ot:
 
-joro
-alex
-bobi
+Joro
+Alex
+Bobi
 
 RABOTNA VERSIQ
 
