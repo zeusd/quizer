@@ -1,0 +1,45 @@
+{
+  "name": "World Wars",
+  "qs": {
+    "1": {
+      "q": "Which event is commonly considered the trigger of WW1?",
+      "as": {
+        "1": "The invasion of Poland",
+        "2": "The assassination of Archduke Franz Ferdinand",
+        "3": "The Treaty of Versailles",
+        "4": "The sinking of the Lusitania"
+      },
+      "c": 2
+    },
+    "2": {
+      "q": "Which treaty officially ended WW1?",
+      "as": {
+        "1": "Treaty of Paris",
+        "2": "Treaty of Versailles",
+        "3": "Treaty of Tordesillas",
+        "4": "Treaty of Yalta"
+      },
+      "c": 2
+    },
+    "3": {
+      "q": "Operation Barbarossa was:",
+      "as": {
+        "1": "The Allied invasion of Italy",
+        "2": "Germany’s invasion of the Soviet Union",
+        "3": "Japan’s attack on Pearl Harbor",
+        "4": "The bombing of London"
+      },
+      "c": 2
+    },
+    "4": {
+      "q": "Which country suffered the highest number of casualties in WW2?",
+      "as": {
+        "1": "Germany",
+        "2": "United States",
+        "3": "Soviet Union",
+        "4": "Japan"
+      },
+      "c": 3
+    }
+  }
+}

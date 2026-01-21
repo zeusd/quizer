@@ -1,0 +1,25 @@
+{
+  "name": "Critical Thinking",
+  "qs": {
+    "1": {
+      "q": "What is confirmation bias?",
+      "as": {
+        "1": "Rejecting all evidence",
+        "2": "Favoring information that confirms existing beliefs",
+        "3": "Changing opinions too often",
+        "4": "Relying only on experts"
+      },
+      "c": 2
+    },
+    "2": {
+      "q": "Correlation implies causation is:",
+      "as": {
+        "1": "Always true",
+        "2": "Often true",
+        "3": "Rarely true",
+        "4": "A logical fallacy"
+      },
+      "c": 4
+    }
+  }
+}

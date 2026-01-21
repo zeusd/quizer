@@ -1,0 +1,35 @@
+{
+  "name": "Near East",
+  "qs": {
+    "1": {
+      "q": "Which civilization heavily influenced early Israelite culture?",
+      "as": {
+        "1": "Greek",
+        "2": "Roman",
+        "3": "Mesopotamian",
+        "4": "Chinese"
+      },
+      "c": 3
+    },
+    "2": {
+      "q": "The Hebrew Bible was primarily written in which language?",
+      "as": {
+        "1": "Greek",
+        "2": "Latin",
+        "3": "Hebrew",
+        "4": "Aramaic"
+      },
+      "c": 3
+    },
+    "3": {
+      "q": "Archaeological evidence for the Exodus story is best described as:",
+      "as": {
+        "1": "Extensive and conclusive",
+        "2": "Limited and debated",
+        "3": "Universally accepted",
+        "4": "Directly recorded by Egyptians"
+      },
+      "c": 2
+    }
+  }
+}

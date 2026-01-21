@@ -1,0 +1,25 @@
+{
+  "name": "Physics",
+  "qs": {
+    "1": {
+      "q": "What is Newton’s First Law about?",
+      "as": {
+        "1": "Force",
+        "2": "Acceleration",
+        "3": "Inertia",
+        "4": "Momentum"
+      },
+      "c": 3
+    },
+    "2": {
+      "q": "What is the unit of force?",
+      "as": {
+        "1": "Joule",
+        "2": "Watt",
+        "3": "Newton",
+        "4": "Pascal"
+      },
+      "c": 3
+    }
+  }
+}

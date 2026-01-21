@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f5f6f8;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #1f2933;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav li {
+    margin-right: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: #fff;
+}
+
+.hero {
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.link {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.6rem 1.2rem;
+    background-color: limegreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.link:hover {
+    background-color: green;
+}
+
+.link-primary {
+    background: none;
+    color: limegreen;
+    padding: 0;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.link-primary:hover {
+    color: white;
+    background-color: green;
+}
+
+img {
+    max-height: 40px;
+    vertical-align: middle;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: large;
+}
+
+#quiz-form fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#quiz-form legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+#quiz-form label {
+    display: block;
+    margin: 0.4rem 0;
+    cursor: pointer;
+}
+
+#quiz-form input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.row {
+    width: 100%;
+}
+
+.large-12 {
+    width: 100%;
+}
+
+.module_top, .module_bottom {
+    display: none;
+}
+
+table {
+    border: 0 !important;
+}
+
+.module_content img {
+    min-width: 70px;
+}
+
+.module_content h2 {
+    font-size: 30px;
+}

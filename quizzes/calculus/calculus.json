@@ -1,0 +1,25 @@
+{
+  "name": "Calculus",
+  "qs": {
+    "1": {
+      "q": "What does a derivative represent?",
+      "as": {
+        "1": "Area under a curve",
+        "2": "Rate of change",
+        "3": "Total accumulation",
+        "4": "Maximum value"
+      },
+      "c": 2
+    },
+    "2": {
+      "q": "An integral is primarily used to calculate:",
+      "as": {
+        "1": "Slope",
+        "2": "Velocity",
+        "3": "Area",
+        "4": "Acceleration"
+      },
+      "c": 3
+    }
+  }
+}

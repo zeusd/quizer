@@ -1,0 +1,35 @@
+{
+  "name": "Ancient Greeks and Romans",
+  "qs": {
+    "1": {
+      "q": "Which Greek city-state is associated with democracy?",
+      "as": {
+        "1": "Sparta",
+        "2": "Athens",
+        "3": "Thebes",
+        "4": "Corinth"
+      },
+      "c": 2
+    },
+    "2": {
+      "q": "Who was Julius Caesar?",
+      "as": {
+        "1": "A Roman emperor",
+        "2": "A Roman general and statesman",
+        "3": "A Greek philosopher",
+        "4": "A Carthaginian leader"
+      },
+      "c": 2
+    },
+    "3": {
+      "q": "What was the Roman Republic?",
+      "as": {
+        "1": "A monarchy",
+        "2": "A democratic empire",
+        "3": "A state governed by elected officials",
+        "4": "A military dictatorship"
+      },
+      "c": 3
+    }
+  }
+}
