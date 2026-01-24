@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 html, body {
@@ -9,10 +9,14 @@ html, body {
     background-color: #f5f6f8;
     color: #222;
     line-height: 1.6;
-    min-height: 100vh;
+    min-height: 100vh
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
     background-color: #1f2933;
     color: #fff;
 }
@@ -20,39 +24,35 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-nav li {
-    margin-right: 1.5rem;
+    gap: 1.5rem;
+    padding: 0;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 500
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 main {
     max-width: 960px;
     margin: 2rem auto;
     padding: 0 1rem;
-    background-color: #fff;
+    background-color: #fff
 }
 
 .hero {
     padding: 2rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd
 }
 
 .hero p {
     margin-bottom: 1rem;
-    font-size: 1.05rem;
+    font-size: 1.05rem
 }
 
 .link {
@@ -63,11 +63,11 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 4px;
-    font-weight: 500;
+    font-weight: 500
 }
 
 .link:hover {
-    background-color: green;
+    background-color: green
 }
 
 .link-primary {
@@ -75,68 +75,54 @@ main {
     color: limegreen;
     padding: 0;
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .link-primary:hover {
     color: white;
-    background-color: green;
+    background-color: green
 }
 
-img {
+.quiz-item p {
+    display: flex;
+    align-items: center
+}
+
+.quiz-item p img {
     max-height: 40px;
     vertical-align: middle;
+    margin-left: auto
 }
 
 h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem
 }
 
 h2 {
-    font-size: large;
+    font-size: large
 }
 
 #quiz-form fieldset {
     border: 1px solid #ccc;
     padding: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem
 }
 
 #quiz-form legend {
     padding: 0 0.5rem;
-    font-weight: bold;
+    font-weight: bold
 }
 
 #quiz-form label {
     display: block;
     margin: 0.4rem 0;
-    cursor: pointer;
+    cursor: pointer
 }
 
 #quiz-form input[type="radio"] {
-    margin-right: 0.5rem;
-}
-
-.row {
-    width: 100%;
-}
-
-.large-12 {
-    width: 100%;
-}
-
-.module_top, .module_bottom {
-    display: none;
+    margin-right: 0.5rem
 }
 
 table {
-    border: 0 !important;
-}
-
-.module_content img {
-    min-width: 70px;
-}
-
-.module_content h2 {
-    font-size: 30px;
+    border: 0 !important
 }
