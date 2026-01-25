@@ -1,0 +1,14 @@
+{
+    "quizzes": [
+        "algebra",
+        "ancient_history",
+        "calculus",
+        "critical_thinking",
+        "history",
+        "near_east",
+        "physics",
+        "predicate_logic",
+        "religion",
+        "world_wars"
+    ]
+}
