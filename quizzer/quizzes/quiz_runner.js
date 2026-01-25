@@ -55,6 +55,17 @@ function timer(timeLeft) {
 
 }
 
+function collectAnswers() {
+    const answers = {};
+
+    const checked = container.querySelectorAll('input[type="radio"]:checked');
+    checked.forEach(input => {
+        answers[input.name] = input.value;
+    });
+
+    return answers;
+}
+
 timer(600);
 
 fetch(jsonFile)
@@ -84,7 +95,7 @@ fetch(jsonFile)
 
                 const input = document.createElement('input');
                 input.type = 'radio';
-                input.name = `q${i}`;
+                input.name = `q${i + 1}`;
                 input.value = key;
 
                 label.appendChild(input);
@@ -102,7 +113,28 @@ fetch(jsonFile)
 
         submitBtn.addEventListener('click', () => {
             showConfirmPopup(() => {
-                alert('Submission logic goes here.');
+                const answers = collectAnswers();
+                fetch('/scripts/submit.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        quiz: jsonFile,
+                        answers: answers
+                    })
+                })
+                    .then(res => {
+                        if (!res.ok) throw new Error('Submission failed');
+                        return res.json();
+                    })
+                    .then(data => {
+                        window.location.href = `results.html?attempt=${data.attemptId}`;
+                    })
+                    .catch(err => {
+                        console.error(err);
+                        alert('Failed to submit quiz.');
+                    });
             });
         });
 
