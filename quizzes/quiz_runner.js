@@ -114,30 +114,24 @@ fetch(jsonFile)
         submitBtn.addEventListener('click', () => {
             showConfirmPopup(() => {
                 const answers = collectAnswers();
-                fetch('/scripts/submit.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        quiz: jsonFile,
-                        answers: answers
-                    })
+                let json_body = JSON.stringify({
+                    quiz: jsonFile.replace('.json', ''),
+                    answers: answers
                 })
-                    .then(res => {
-                        if (!res.ok) throw new Error('Submission failed');
-                        return res.json();
-                    })
-                    .then(data => {
-                        window.location.href = `results.html?attempt=${data.attemptId}`;
-                    })
-                    .catch(err => {
-                        console.error(err);
-                        alert('Failed to submit quiz.');
-                    });
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        let res = JSON.parse(request.responseText);
+                        window.location.href = `results.html?z=${res.uid}`;
+                    }
+                };
+                request.open('POST', '../../scripts/submit.php', true);
+                request.setRequestHeader('Content-type', 'application/json');
+                request.send(json_body);
             });
         });
 
         container.appendChild(submitBtn);
     })
     .catch(err => console.error(err));
+
