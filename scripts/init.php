@@ -14,7 +14,7 @@ $quiz_list = json_decode($json_ql, true);
 
 foreach($quiz_list["quizzes"] as $quiz_name) {
 #   echo $quiz_name . "<br>";
-    $check_sql = "SELECT * FROM quizer.quizzes WHERE NAME=\"" . $quiz_name . "\";";
+    $check_sql = "SELECT * FROM quizzer.quizzes WHERE NAME=\"" . $quiz_name . "\";";
 #   echo $check . "<br>";
     
     $ch_res = $conn->query($check_sql);
@@ -36,7 +36,7 @@ foreach($quiz_list["quizzes"] as $quiz_name) {
         }
         $as = $as . "}";
         
-        $ins_sql = "INSERT INTO quizer.quizzes (NAME, QUESTIONS, ANSWERS, MAX_SCORE) VALUES ('" . $quiz_name . "', '" . $qs . "', '" . $as . "', '" . $ms . "');";
+        $ins_sql = "INSERT INTO quizzer.quizzes (NAME, QUESTIONS, ANSWERS, MAX_SCORE) VALUES ('" . $quiz_name . "', '" . $qs . "', '" . $as . "', '" . $ms . "');";
 #       echo $ins . "<br>";
 
         $conn->query($ins_sql);
@@ -52,7 +52,7 @@ foreach($quiz_list["quizzes"] as $quiz_name) {
     }
 }
 
-$sql = "SELECT * FROM quizer.quizzes;";
+$sql = "SELECT * FROM quizzer.quizzes;";
 $result = $conn->query($sql);
 
 if($result->num_rows > 0) {
@@ -69,3 +69,4 @@ if($result->num_rows > 0) {
 
 mysqli_close($conn);
 ?>
+

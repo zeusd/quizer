@@ -1,6 +1,6 @@
-CREATE DATABASE quizer;
+CREATE DATABASE quizzer;
 
-CREATE TABLE `quizer`.`quizzes` (
+CREATE TABLE `quizzer`.`quizzes` (
     `NAME` VARCHAR(100) NOT NULL,
     `QUESTIONS` JSON NOT NULL,
     `ANSWERS` JSON NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE `quizer`.`quizzes` (
     PRIMARY KEY (NAME)
 );
 
-CREATE TABLE `quizer`.`results` (
+CREATE TABLE `quizzer`.`results` (
     `ID` INT NOT NULL AUTO_INCREMENT,
     `UID` INT NOT NULL,
     `QUIZ` VARCHAR(100) NOT NULL,
