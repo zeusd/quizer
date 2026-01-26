@@ -1,13 +1,13 @@
 const params = new URLSearchParams(window.location.search);
-const attemptId = params.get('attempt');
+const uid = params.get('z');
 
 if (!attemptId) {
     document.getElementById('results-container').textContent =
         'No attempt specified.';
-    throw new Error('Missing attempt id');
+    throw new Error('Missing uid');
 }
 
-fetch(`/scripts/results.php?attempt=${attemptId}`)
+fetch(`../scripts/results.php?z=${uid}`)
     .then(res => res.json())
     .then(data => {
         renderResults(data);

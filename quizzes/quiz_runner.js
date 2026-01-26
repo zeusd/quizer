@@ -122,7 +122,7 @@ fetch(jsonFile)
                 request.onreadystatechange = function() {
                     if (this.readyState == 4 && this.status == 200) {
                         let res = JSON.parse(request.responseText);
-                        window.location.href = `results.html?z=${res.uid}`;
+                        window.location.href = `../results.html?z=${res.uid}`;
                     }
                 };
                 request.open('POST', '../../scripts/submit.php', true);
