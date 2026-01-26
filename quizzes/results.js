@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const uid = params.get('z');
 
-if (!attemptId) {
+if (!uid) {
     document.getElementById('results-container').textContent =
         'No attempt specified.';
     throw new Error('Missing uid');

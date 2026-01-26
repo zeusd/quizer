@@ -1,6 +1,4 @@
 <?php
-
-  
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -11,11 +9,18 @@ if (!$conn) {
     die("connection failed: " . mysqli_connect_error());
 }
 
-$get_sql = "SELECT * FROM quizzer.results WHERE UID=\" . "$_GET['z'] . "\";";
+$get_sql = "SELECT QUIZ, SCORE FROM quizzer.results WHERE UID=\"" . $_GET['z'] . "\";";
 $res_get = $conn->query($get_sql);
 
 if (mysqli_num_rows($res_get) > 0) {
-    // TODO
+    $row = $res_get->fetch_assoc();
+    $q_name = $row["QUIZ"];
+    $score = $row["SCORE"];
+    $quiz_sql = "SELECT MAX_SCORE FROM quizzer.quizzes WHERE NAME=\"" . $q_name . "\";";
+    $res_quiz = $conn->query($quiz_sql);
+    $max = $res_quiz->fetch_assoc()["MAX_SCORE"];
+
+    echo "{\"score\": " . $score . ", \"total\": ". $max . "}";
 }
 
 mysqli_close($conn);
