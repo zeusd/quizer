@@ -1,4 +1,4 @@
-# quizer
+# QUIZZER
 Proekt po Ueb Tehnologii
 
 ot:
