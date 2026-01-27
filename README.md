@@ -5,7 +5,6 @@ ot:
 
 Joro
 Alex
-Bobi
 
 RABOTNA VERSIQ
 

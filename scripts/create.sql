@@ -20,3 +20,4 @@ CREATE TABLE `quizzer`.`results` (
     PRIMARY KEY (UID),
     FOREIGN KEY (QUIZ) REFERENCES `quizzes`(NAME)
 );
+
