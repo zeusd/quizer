@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f5f6f8;
+    color: black;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+#quiz-form {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.quiz-question {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+}
+
+.quiz-question-title {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.quiz-option {
+    display: block;
+    margin: 0.4rem 0;
+    cursor: pointer;
+}
+
+.quiz-option input {
+    margin-right: 0.5rem;
+}
+
+.quiz-submit {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.quiz-submit:hover {
+    background-color: blue;
+}
+
+.quiz-results {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid #bae6fd;
+    font-weight: 500;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 6, 6, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    max-width: 320px;
+    text-align: center;
+}
+
+.modal button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.quiz-timer {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #222;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    z-index: 1000;
+}

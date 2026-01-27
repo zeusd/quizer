@@ -1,0 +1,25 @@
+{
+  "name": "Algebra",
+  "qs": {
+    "1": {
+      "q": "Solve for x: 2x + 5 = 13",
+      "as": {
+        "1": "3",
+        "2": "4",
+        "3": "5",
+        "4": "6"
+      },
+      "c": 2
+    },
+    "2": {
+      "q": "What is the quadratic formula used for?",
+      "as": {
+        "1": "Solving linear equations",
+        "2": "Factoring polynomials",
+        "3": "Solving quadratic equations",
+        "4": "Graphing functions"
+      },
+      "c": 3
+    }
+  }
+}

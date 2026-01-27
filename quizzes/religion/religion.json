@@ -1,0 +1,25 @@
+{
+  "name": "Comparative Religion",
+  "qs": {
+    "1": {
+      "q": "Which religion predates Christianity?",
+      "as": {
+        "1": "Islam",
+        "2": "Judaism",
+        "3": "Buddhism",
+        "4": "Mormonism"
+      },
+      "c": 2
+    },
+    "2": {
+      "q": "Which concept is common to many religions?",
+      "as": {
+        "1": "Monotheism",
+        "2": "Moral codes",
+        "3": "Prophets",
+        "4": "Sacred texts"
+      },
+      "c": 2
+    }
+  }
+}

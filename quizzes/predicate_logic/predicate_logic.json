@@ -1,0 +1,25 @@
+{
+  "name": "Predicate Logic",
+  "qs": {
+    "1": {
+      "q": "What does the symbol ∀ represent?",
+      "as": {
+        "1": "There exists",
+        "2": "And",
+        "3": "For all",
+        "4": "If and only if"
+      },
+      "c": 3
+    },
+    "2": {
+      "q": "Which statement best describes a predicate?",
+      "as": {
+        "1": "A constant value",
+        "2": "A function returning true or false",
+        "3": "A logical connective",
+        "4": "A variable"
+      },
+      "c": 2
+    }
+  }
+}

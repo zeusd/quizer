@@ -1,0 +1,145 @@
+{
+  "name": "History",
+  "qs": {
+    "1": {
+      "q": "Which civilization is credited with building the pyramids of Giza?",
+      "as": {
+        "1": "Mesopotamians",
+        "2": "Ancient Egyptians",
+        "3": "Romans",
+        "4": "Phoenicians"
+      },
+      "c": 2
+    },
+    "2": {
+      "q": "Who was the first emperor of Rome?",
+      "as": {
+        "1": "Julius Caesar",
+        "2": "Nero",
+        "3": "Augustus",
+        "4": "Caligula"
+      },
+      "c": 3
+    },
+    "3": {
+      "q": "The Magna Carta was signed in which country?",
+      "as": {
+        "1": "France",
+        "2": "Spain",
+        "3": "England",
+        "4": "Germany"
+      },
+      "c": 3
+    },
+    "4": {
+      "q": "Which empire was ruled by Genghis Khan?",
+      "as": {
+        "1": "Ottoman Empire",
+        "2": "Roman Empire",
+        "3": "Mongol Empire",
+        "4": "Persian Empire"
+      },
+      "c": 3
+    },
+    "5": {
+      "q": "What event is commonly considered the start of the French Revolution?",
+      "as": {
+        "1": "Execution of Louis XVI",
+        "2": "Storming of the Bastille",
+        "3": "Reign of Terror",
+        "4": "Napoleon’s coronation"
+      },
+      "c": 2
+    },
+    "6": {
+      "q": "Which ancient city was destroyed by the eruption of Mount Vesuvius in 79 AD?",
+      "as": {
+        "1": "Athens",
+        "2": "Carthage",
+        "3": "Pompeii",
+        "4": "Sparta"
+      },
+      "c": 3
+    },
+    "7": {
+      "q": "Who was the first President of the United States?",
+      "as": {
+        "1": "Thomas Jefferson",
+        "2": "John Adams",
+        "3": "George Washington",
+        "4": "Benjamin Franklin"
+      },
+      "c": 3
+    },
+    "8": {
+      "q": "The Cold War was primarily a conflict between which two blocs?",
+      "as": {
+        "1": "USA and China",
+        "2": "USA and USSR",
+        "3": "UK and Germany",
+        "4": "France and Spain"
+      },
+      "c": 2
+    },
+    "9": {
+      "q": "Which wall divided a European city from 1961 to 1989?",
+      "as": {
+        "1": "Great Wall of China",
+        "2": "Hadrian’s Wall",
+        "3": "Berlin Wall",
+        "4": "Iron Curtain"
+      },
+      "c": 3
+    },
+    "10": {
+      "q": "Who discovered America in 1492, according to traditional European history?",
+      "as": {
+        "1": "Marco Polo",
+        "2": "Christopher Columbus",
+        "3": "Vasco da Gama",
+        "4": "Ferdinand Magellan"
+      },
+      "c": 2
+    },
+    "11": {
+      "q": "Which empire was centered in modern-day Turkey and lasted until WW1?",
+      "as": {
+        "1": "Byzantine Empire",
+        "2": "Ottoman Empire",
+        "3": "Austro-Hungarian Empire",
+        "4": "Persian Empire"
+      },
+      "c": 2
+    },
+    "12": {
+      "q": "The Renaissance began in which country?",
+      "as": {
+        "1": "France",
+        "2": "England",
+        "3": "Italy",
+        "4": "Spain"
+      },
+      "c": 3
+    },
+    "13": {
+      "q": "Which ancient Greek philosopher was the teacher of Alexander the Great?",
+      "as": {
+        "1": "Socrates",
+        "2": "Plato",
+        "3": "Aristotle",
+        "4": "Pythagoras"
+      },
+      "c": 3
+    },
+    "14": {
+      "q": "What was the primary purpose of the Silk Road?",
+      "as": {
+        "1": "Military expansion",
+        "2": "Religious pilgrimages",
+        "3": "Trade between East and West",
+        "4": "Migration of populations"
+      },
+      "c": 3
+    }
+  }
+}
