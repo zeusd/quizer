@@ -7,12 +7,6 @@ if (!uid) {
     throw new Error('Missing uid');
 }
 
-fetch(`../scripts/results.php?z=${uid}`)
-    .then(res => res.json())
-    .then(data => {
-        renderResults(data);
-    });
-
 function renderResults(data) {
     const container = document.getElementById('results-container');
 
@@ -20,24 +14,31 @@ function renderResults(data) {
     summary.textContent = `Score: ${data.score} / ${data.total}`;
     container.appendChild(summary);
 
-    data.questions.forEach((q, i) => {
-        const block = document.createElement('div');
-        block.className = 'result-question';
-
-        const title = document.createElement('h3');
-        title.textContent = `${i + 1}. ${q.question}`;
-        block.appendChild(title);
-
-        Object.entries(q.answers).forEach(([key, text]) => {
-            const p = document.createElement('p');
-            p.textContent = text;
-
-            if (key === q.correct) p.classList.add('correct');
-            if (key === q.user && key !== q.correct) p.classList.add('wrong');
-
-            block.appendChild(p);
-        });
-
-        container.appendChild(block);
-    });
+    // TODO: backend
+    // data.questions.forEach((q, i) => {
+    //     const block = document.createElement('div');
+    //     block.className = 'result-question';
+    //
+    //     const title = document.createElement('h3');
+    //     title.textContent = `${i + 1}. ${q.question}`;
+    //     block.appendChild(title);
+    //
+    //     Object.entries(q.answers).forEach(([key, text]) => {
+    //         const p = document.createElement('p');
+    //         p.textContent = text;
+    //
+    //         if (key === q.correct) p.classList.add('correct');
+    //         if (key === q.user && key !== q.correct) p.classList.add('wrong');
+    //
+    //         block.appendChild(p);
+    //     });
+    //
+    //     container.appendChild(block);
+    // });
 }
+
+fetch(`../scripts/results.php?z=${uid}`)
+    .then(res => res.json())
+    .then(data => {
+        renderResults(data);
+    });

@@ -19,10 +19,9 @@ if (mysqli_num_rows($res_get) > 0) {
     $quiz_sql = "SELECT MAX_SCORE FROM quizzer.quizzes WHERE NAME=\"" . $q_name . "\";";
     $res_quiz = $conn->query($quiz_sql);
     $max = $res_quiz->fetch_assoc()["MAX_SCORE"];
-
+    # TODO: Add answers to response
     echo "{\"score\": " . $score . ", \"total\": ". $max . "}";
 }
 
 mysqli_close($conn);
 ?>
-
